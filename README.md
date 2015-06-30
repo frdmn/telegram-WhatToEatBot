@@ -1,21 +1,14 @@
-# WhatToEatBot
+# telegram-WhatToEatBot
 
-[description]
+No idea what to eat? Just type `/dinner` and let this bot suggest what you should eat today. The Telegram bot is written in NodeJS and uses the new [Bot API](https://core.telegram.org/bots/api)
 
 ## Installation
 
 1. Make sure you've installed all requirements
 2. Clone this repository:
-  `git clone https://github.com/[GitHubUsername]/WhatToEatBot`
-3. Install the project using `make`:
-  `make install`
-
-## Usage
-
-Here's a short explanation how to use `WhatToEatBot`:
-
-* Use it
-* Profit
+  `git clone https://github.com/frdmn/telegram-WhatToEatBot`
+3. Install the project using `npm`:
+  `npm install`
 
 ## Contributing
 
@@ -27,9 +20,8 @@ Here's a short explanation how to use `WhatToEatBot`:
 
 ## Requirements / Dependencies
 
-* This
-* That
-* As well as this
+* NodeJS
+* Telegram Bot API token
 
 ## Version
 
@@ -37,4 +29,4 @@ Here's a short explanation how to use `WhatToEatBot`:
 
 ## License
 
-[/USR/LOCAL/LIB/NODE_MODULES/INIT.JS/LICENSES/MIT](LICENSE)
+[MIT](LICENSE)
