@@ -32,6 +32,7 @@ var bot = new nodeTelegramBot({
 .on('message', function (message) {
   /* Process "/random" command */
   if (message.text == "/dinner") {
+    console.log(message);
     getWebContent(recipeURL, function(data){
       // Parse DOM and recipe informations
       var $ = cheerio.load(data)
