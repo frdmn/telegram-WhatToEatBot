@@ -30,8 +30,8 @@ var bot = new nodeTelegramBot({
   token: config.token
 })
 .on('message', function (message) {
-  /* Process "/random" command */
-  if (message.text == "/dinner") {
+  /* Process "/dinner" command */
+  if (message.text == "/dinner" || message.text == "/dinner@WhatToEatBot") {
     console.log(message);
     getWebContent(recipeURL, function(data){
       // Parse DOM and recipe informations
