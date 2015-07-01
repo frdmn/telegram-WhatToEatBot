@@ -36,7 +36,7 @@ var bot = new nodeTelegramBot({
     getWebContent(recipeURL, function(data){
       // Parse DOM and recipe informations
       var $ = cheerio.load(data)
-          , recipeName = $("span[itemprop=name]").html()
+          , recipeName = $("meta[property='og:title']").attr('content')
           , recipeURL = $("meta[property='og:url']").attr('content');
       // Send bot reply
       bot.sendMessage({
