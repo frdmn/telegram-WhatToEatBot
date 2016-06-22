@@ -24,7 +24,7 @@ function getWebContent(url, callback){
 
 /* Logic */
 
-var recipeURL = 'http://www.cookstr.com/searches/surprise';
+var recipeURL = 'http://www.random-recipes.com/index.php?page=index&filter=true';
 
 var bot = new nodeTelegramBot({
   token: config.token
@@ -36,8 +36,8 @@ var bot = new nodeTelegramBot({
     getWebContent(recipeURL, function(data){
       // Parse DOM and recipe informations
       var $ = cheerio.load(data)
-          , recipeName = $("meta[property='og:title']").attr('content')
-          , recipeURL = $("meta[property='og:url']").attr('content');
+          , recipeName = $(".recipe-name-title").text()
+          , recipeURL = 'http://www.random-recipes.com/' + $(".recipe-name").attr('href');
       // Send bot reply
       bot.sendMessage({
           chat_id: message.chat.id,
