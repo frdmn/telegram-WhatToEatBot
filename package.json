@@ -1,7 +1,7 @@
 {
   "name": "telegram-whattoeatbot",
-  "description": "![](http://up.frd.mn/tLkJv.png)",
   "version": "1.0.0",
+  "description": "NodeJS based Telegram bot to find dinner suggestions",
   "main": "bot.js",
   "dependencies": {
     "cheerio": "^0.19.0",
