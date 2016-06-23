@@ -29,7 +29,7 @@ No idea what to eat? Just type `/dinner` and let this bot suggest what you shoul
 
 ## Version
 
-1.0.0
+1.1.0
 
 ## License
 
