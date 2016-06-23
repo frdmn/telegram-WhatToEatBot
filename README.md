@@ -1,6 +1,6 @@
 # telegram-WhatToEatBot
 
-![](http://up.frd.mn/tLkJv.png)
+![](http://i.imgur.com/AKe26fZ.png)
 
 No idea what to eat? Just type `/dinner` and let this bot suggest what you should eat today. The Telegram bot is written in NodeJS and uses the new [Bot API](https://core.telegram.org/bots/api)
 
