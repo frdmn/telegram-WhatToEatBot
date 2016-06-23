@@ -7,7 +7,13 @@ var nodeTelegramBot = require('node-telegram-bot')
 
 /* Functions */
 
-String.prototype.repeat= function(n){
+/**
+ * Repeat a string N times
+ * @param  {Integer} n
+ * @return {String}
+ */
+
+String.prototype.repeat = function(n){
     n= n || 1;
     return Array(n+1).join(this);
 }
